@@ -71,7 +71,8 @@ ul.subnav ul ul li a,span.currentbranch2{background:url("/web/20181118140623im_/
 }
 .seven-ten {
 	float: left;
-	margin-left: 260px;
+	/*margin-left: 260px;*/
+    margin-left: 20px;
 	width: 710px;
 }
 div.minislider {
