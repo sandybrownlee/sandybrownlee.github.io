@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dr Sandy Brownlee's Home Page</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="Sandy Brownlee" />
+  <!--#include virtual="/~sbr/stiracuk/unicss.html" -->
+  <!--was an include of virtual="/include/unicss.html" -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="sbstyles.css" />
+</head>
+
+<!--#set var="navsubsec" value="staff" -->
+
+<body class="Study with Stirling">
+
+  <!-- "#include" the standard dept banner and nav bar -->
+  <!--#include virtual="/~sbr/stiracuk/uniheader.html" -->
+  <!-- was an include of virtual="/include/uniheader.html" -->
+  <!-- end of included banner and nav bar -->
+
+  <div id="breadcrumb">
+    You are here:
+    <a title ="Computing Science and Mathematics Home" href="/">CS&amp;M</a>
+    &raquo; <a title ="Staff List" href="/intro/whoiswho.html">Staff</a>
+    &raquo; Dr Sandy Brownlee
+  </div>
+
+  <div id="stir-content" class="seven-ten">
+  <a name="maincontent"></a>
+  <!-- main content goes below here -->
+	<!--#include virtual="includes/sbheader.html" -->
+
+
+	<p><h3>Research Projects</h3>
+    <p>I'm broadly interested in optimisation and machine learning, including real world applications of these and underpinning theory.
+
+    <h3>Explanations and theory</h3>
+    <p>Evolutionary algorithms and similar techniques are great at solving difficult problems, but don't tend to give much explanation to the end user about why they chose the solutions they did. Going back to my PhD work, I looked at ways we can build models of the solutions being visited by such algorithms during their search, then tried to extract information from those models and make sense of them. I currently have a research student looking at this very topic. I also have an ongoing interest in how we can use these models to better understand what makes some problems harder than others. EAs are also a good way to explore models to explain how they work and identify biases, and we are making use of this in the project <a href="https://phawm.org">Participatory Harm Auditing Workbenches and Methodologies (PHAWM)</a>. The <a href="https://ecxai.github.io/ecxai">ECXAI</a> workshop series also seeks to explore the interactions between Evolutionary Computation and Explainable AI.</p>
+
+	<p>In 2015-2016 I worked as an RA on the project <a href="http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/N002849/1">FAIME</a>: A Feature based Framework to Automatically Integrate and Improve Metaheuristics via Examples. This was all about recognising features of problems and algorithms so we can match up algorithms to problems that they can easily solve. The aim was to automatically design new algorithms for problems, based on the problems' features.
+
+    <h3>Search-based software engineering</h3>
+    <p>Computer code fixing itself? This seems like proper sci-fi stuff but it is really happening, more-or-less. I'm interested in various ways of applying search-based optimisation to improving software.
+	<p>I worked for a few years as a research assistant on the project <a href="http://daase.cs.ucl.ac.uk/">DAASE (Dynamic Adaptive Automated Software Engineering)</a>, and am still working with some collaborators on this topic. My focus is currently on using search-based methods to improve existing code (e.g. making a simulator more accurate, or making code that causes the computer running it to consume less power), and on making the search algorithms solve problems in a more intelligent way.
+    <p>I also recently led a small project funded by the Carnegie Trust called "TOGA: Towards Grammar Aware Operators for Genetic Improvement of Software", which looked at mutating the order of binary expressions and "if" statements in Java code to achieve speedups.
+    <p>I am a contributor to the open source project <a href="https://github.com/gintool/gin">Gin</a>, a toolbox to simplify research in genetic imrovement of software.
+
+    <h3>Building energy optimisation</h3>
+	<p>We live and work in buildings, and so their comfort, and their energy efficiency, is of great importance. My interesting this this topic goes back to my time at Loughborough University (2010-2013), where I worked on three projects looking at how we can make buildings more green but still comfortable, without costing too much to build: <a href="http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=TS/H002782/1">OPTIMISE</a>, <a href="https://www.secure-project.org">SECURE</a>, and <a href="http://leedr-project.co.uk">LEEDR</a>. I looked at ways we can use evolutionary algorithms to explore the trade-offs between different goals, how we could use surrogate models of fitness to speed up the search (building performance simulations being rather long-running), and how we could explore very large spaces like choosing which of the thousands of houses in a town should get new insulation.
+
+	<h3>Airport and aircraft operations, and routing problems</h3>
+    <p>Taxiing is one of the bottlenecks in the airport operations ecosystem. Planes are not made to run efficiently at ground level, meaning that emissions due to taxiing are suprisingly high, and delays in taxiing can cause knock-on impact in other resource-constrained parts of the airport (especially runways and gates/stands). So there are several interesting problems around predicting taxi times, modelling aircraft movements, and optimisation of the routes so they are more efficient and more robust. When I first came to Stirling I  worked on the project <a href="http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/H004424/2">SANDPIT: Integrating and Automating Airport Operations</a>, in which I focussed on real-world aircraft ground movement (allocating taxi routes to aircraft), specifically approaches to handling uncertainty and sourcing free real-world data sets for the problem.
+	<p>I am currently working on the <a href="http://www.transitproject.co.uk">TRANSIT</a> project, funded by the EPSRC, on which I am a co-investigator. This project is working with several academic and industrial partners to develop automated routing algorithms for taxiing aircraft that are robust to uncertainty and more realistic than existing methods.
+    <p>I am also working with a small business based in Scotland to look at smart algorithms to route aircraft in flight so we can make the most efficient use of the airspace we have available. Another project looked at optimising vehicle fleets for community healthcare.
+    
+	<p><b>Datasets and tools:</b> If you've come here looking for the GM Tools for manipulating airport ground movement data, then please visit the <a href="https://github.com/gm-tools/gm-tools/wiki">GM Tools project page</a> at GitHub. Benchmark datasets can be found in the collection at <a href="http://www.asap.cs.nott.ac.uk/external/atr/benchmarks/index.shtml">ASAP Nottingham</a>.
+
+	<p>Here is a video produced by Microsoft to highlight the research, and particularly the role that the Azure cloud platform played (I was grateful to receive a year-long grant for free use of Azure from them). A <a href="http://research.microsoft.com/en-US/collaboration/stories/web-casestudy-airport-ops-330.pdf">case study</a> is also now available.<br><iframe width="560" height="315" src="https://www.youtube.com/embed/M53NlmCdRRs" frameborder="0" allowfullscreen></iframe>
+
+
+    <h3>Evolutionary art and music</h3>
+	<p>I recently led a small project funded by the Royal Society of Edinburgh (Scottish Crucible) called "Crowd-sourcing the aural identities of places by evolutionary optimisation". This is joint with Suk-Jun Kim at University of Aberdeen, and Stella Chan and Szu-Han Wan at Edinburgh University, and will be looking at developing a distributed platform to use evolutionary algorithms to explore the sounds and collective memories associated with geographic locations.
+    <p>Several of my undergraduate students have looked at ways to generate music using evolutionary algorithms, with some really nice results.
+
+	<h3>Background to my work</h3>
+	<p>I have always been fascinated by computing and in particular artificial intelligence techniques. I particularly enjoy the interplay between the theoretical side of understanding what makes different algorithms tick and the huge range of interesting application areas that have meaningful real-world value (or are just fun!). My work has settled around approaches to dealing with real-world optimisation problems; handling uncertainty, solving problems with hard constraints and multiple objectives, dealing with long simulation run-times and analysis of optimisation results to better help with decision making.</p>
+	<p>I completed a Computer Science BSc(hons) in 2005 at Robert Gordon University in Aberdeen, Scotland. During the last year of that degree I was funded by the Carnegie Trust to conduct a short-term research project in applying genetic algorithms to cancer chemotherapy scheduling. My interest in this area grew, leading to an honours project in timetabling with memetic algorithms. I then progressed to work for a PhD, entitled <i>Multivariate Markov Networks for Fitness Modelling in an Estimation of Distribution Algorithm</i>. This covered a range of applications for evolutionary algorithms, and focussed on the construction of fitness models to support the evolutionary process. I continued to researchon my own time alongside a job as a software engineer in industry during 2008-2010, where I was working in the sector of oil, gas and renewable energy. I returned to academia full-time as a research associate in the building energy group at Loughborough University, and subsequently came to the CHORDS research group (now part of the Data Science RG) here at Stirling in 2013, first as a postdoc, then a lecturer from 2018.<p>
+
+
+  <!-- end of main content -->
+
+<!--#set var="myname" value="Dr Sandy Brownlee" -->
+<!--#set var="myroom" value="4B125" -->
+<!--#set var="myext" value="7454" -->
+
+<!--#include virtual="/~sbr/stiracuk/unifooter.html" -->
+<!-- was in include of /include/unifooter.html -->

@@ -1,0 +1,34 @@
+ValidFrom	ValidTo	Flight	Dep 	Arr	Subt	Action	Reason
+01-Apr-2012	31-Dec-2029	KL0415	AMS	KWI	332	C	Cockpit crew efficiency (Cvlgu 13:55)
+01-Apr-2012	31-Dec-2029	KL0417	AMS	KWI	332	C	Cockpit crew efficiency (Cvlgu 13:55)
+01-Apr-2012	31-Dec-2029	KL0535	AMS	KGL	332	C	Cockpit crew efficiency 2 pilots (Vlgu 9:00)
+01-Apr-2012	31-Dec-2029	KL0537	AMS	KGL	332	C	Cockpit crew efficiency 2 pilots (Vlgu 9:00)
+01-Apr-2012	31-Dec-2029	KL0539	AMS	KGL	332	C	Cockpit crew efficiency 2 pilots (Vlgu 9:00)
+01-Apr-2012	31-Dec-2029	KL0621 	AMS	ATL	333	C	Cabin crew efficiency (CWRD 126.0)
+01-Apr-2012	31-Dec-2029	KL0669 	AMS	DFW	332	C	Cockpit crew efficiency (Cvlgu 19:30)
+01-Apr-2012	31-Dec-2029	KL0677 	AMS	YYC	332	C	Cockpit crew efficiency 2 pilots (Vlgu 9:00)
+01-Apr-2012	31-Dec-2029	KL0677 	AMS	YYC	333	C	Cockpit crew efficiency 2 pilots (Vlgu 9:00)
+01-Apr-2012	31-Dec-2029	KL0765	AMS	AUA	332	C	Connections AMS
+01-Apr-2012	31-Dec-2029	KL0767	AMS	AUA	332	C	Connections AMS
+01-Apr-2012	31-Dec-2029	KL0565 	AMS	NBO	744	C	Cabin crew efficiency (CWRD 109.0)
+01-Apr-2012	31-Dec-2029	KL0713 	AMS	PBM	744	C	Schedule synchronisation
+01-Apr-2012	31-Dec-2029	KL0713 	AMS	PBM	744	C	Cockpit crew efficiency 2 pilots (Vlgu 9:00) and avoid simultaneous ground KL,PY
+01-Apr-2012	31-Dec-2029	KL0713 	AMS	PBM	744	C	Cockpit crew efficiency 2 pilots (Vlgu 9:00)
+01-Apr-2012	31-Dec-2029	KL0713 	AMS	PBM	744	C	Cockpit crew efficiency 2 pilots (Vlgu 9:00) and AMS arr punct  & fleet rotation (JFK)
+01-Apr-2012	31-Dec-2029	KL0861 	AMS	NRT	74E	C	Cockpit crew efficiency (Cvlgu 22:20)
+01-Apr-2012	31-Dec-2029	KL0605 	AMS	SFO	772	C	Cabin crew efficiency (CWRD )
+01-Apr-2012	31-Dec-2029	KL0705 	AMS	GIG	772	C	Connections AMS
+01-Apr-2012	31-Dec-2029	KL0707 	AMS	EZE	772	C	Connections AMS
+01-Apr-2012	31-Dec-2029	KL0751	AMS	UIO	772	C	Uniform schedule 772/77W and connections AMS
+01-Apr-2012	31-Dec-2029	KL0755	AMS	UIO	772	C	Uniform schedule 772/77W and connections AMS
+01-Apr-2012	31-Dec-2029	KL0757	AMS	PTY	772	C	Connections AMS
+01-Apr-2012	31-Dec-2029	KL0791 	AMS	GRU	772	C	Uniform schedule 772/77W and connections AMS
+01-Apr-2012	31-Dec-2029	KL0835 	AMS	SIN	772	C	Cockpit crew efficiency (Cvlgu 25:05)
+01-Apr-2012	31-Dec-2029	KL0867	AMS	KIX	772	C	Cockpit crew efficiency (Cvlgu 22:20)
+01-Apr-2012	31-Dec-2029	KL0869 	AMS	FUK	772	C	Cockpit crew efficiency (Cvlgu 22:20)
+01-Apr-2012	31-Dec-2029	KL0875 	AMS	BKK	772	C	Cockpit crew efficiency (Cvlgu 22:20)
+01-Apr-2012	31-Dec-2029	KL0881 	AMS	HGH	772	C	Fleet rotation and connections AMS
+01-Apr-2012	31-Dec-2029	KL0757	AMS	PTY	77W	C	Connections AMS
+01-Apr-2012	31-Dec-2029	KL0835 	AMS	SIN	77W	C	Cockpit crew efficiency (Cvlgu 25:05)
+01-Apr-2012	31-Dec-2029	KL0867	AMS	KIX	77W	C	Cockpit crew efficiency (Cvlgu 22:20)
+01-Apr-2012	31-Dec-2029	KL0875 	AMS	BKK	77W	C	Cockpit crew efficiency (Cvlgu 22:20)

@@ -1,0 +1,47 @@
+/* TABS */
+
+.ui-tabs-panel{
+display: inline !important;
+
+}
+
+.ui-tabs-nav {
+display: none;
+}
+
+/* ACCORDIAN */
+
+h2.toggledUp {
+background: none;
+padding: 0;
+}
+
+h2.toggledDown{
+background: none;
+padding: 0;
+}
+
+.collapse{
+display: inline !important;
+}
+/*
+     FILE ARCHIVED ON 18:49:21 Oct 12, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:34:03 Dec 02, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.datanode: 98.277 (4)
+  LoadShardBlock: 238.844 (3)
+  load_resource: 248.485
+  exclusion.robots.policy: 0.192
+  esindex: 0.016
+  RedisCDXSource: 8.938
+  CDXLines.iter: 19.242 (3)
+  exclusion.robots: 0.22
+  captures_list: 272.093
+  PetaboxLoader3.resolve: 356.118 (3)
+*/

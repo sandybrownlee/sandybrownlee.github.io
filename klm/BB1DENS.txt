@@ -1,0 +1,2 @@
+ValidFrom	ValidTo	From	To	FromMin	ToMin	ArrCat	DepCat	Station	MutDate	ApprDate	GenDate
+25-OCT-2009	25-OCT-2029	 0:00	23:59	      0	   1439	"L"   	"L"   	"AMS"  	12-DEC-2008	12-DEC-2008	26-JAN-2012

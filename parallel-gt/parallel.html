@@ -1,0 +1,180 @@
+<!doctype html>
+
+<title>Solution Selector</title> 
+<!-- http://syntagmatic.github.com/parallel-coordinates/ -->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js"></script>
+<script src="d3.parcoords.js"></script>
+<script src="divgrid.js"></script>
+
+<h2>Interactive Decision Making, using "Parallel Coordinates"</h2>
+<p style="width:100%;">The following visualisation allows for an interactive narrowing down of the choices, considering multiple criteria. The example [...details TBC]</p>
+<p style="width:100%;">... We can keep going this way until only one design is left.</p>
+
+<div id="checkBoxes"> </div>
+<div id="example" class="parcoords"></div>
+<div id="grid"></div>
+
+
+
+
+<script id="brushing">// quantitative colour scale
+
+
+factors_to_include = {};
+
+//////////////////////////////////////////////////////
+///////////// Handling the checkboxes ////////////////
+//////////////////////////////////////////////////////
+  function flipInclude(x){
+    if(to_include[x]){
+      to_include[x] = false;
+    }
+    else{
+      to_include[x] = true;
+    }
+    generateCoords(); // Refresh the coordinates
+  }
+
+  function generateCheckboxes(){    
+    document.getElementById('checkBoxes').innerHTML = check_names;
+    var checkOut = "";
+    var newLineCounter = 0;
+    for (var i = 0; i < check_names.length; i++) {   
+      if(check_names[i] != 'name'){
+        checkOut +=  check_names[i] + ": <input type=\"checkbox\" id=\""+check_names[i]+"\" onclick=\"flipInclude("+ "\'" + check_names[i]+ "\'"  +")\"checked>        ---- ";
+
+        newLineCounter += 1;
+        if(newLineCounter>3){
+          newLineCounter = 0;
+          checkOut += " <br>"
+        }
+      }
+    }
+    document.getElementById('checkBoxes').innerHTML = checkOut;
+  }
+//////////////////////////////////////////////////////
+</script>
+
+
+<script>
+//////////////////////////////////////////////////////
+////   Reading the input CSV and converting to a dictionary
+//////////////////////////////////////////////////////
+var check_names  = "";
+function readCSV(){
+    d3.csv("results.csv", function(data) {  
+        var headerNamesS = d3.keys(data[0]);
+        check_names = headerNamesS;
+    });
+}
+
+var to_include  = {}
+function headToDict(){
+    for (var i = 0; i < check_names.length; i++) {
+      if(check_names[i] != 'name'){
+        to_include[check_names[i]] = true;
+      }
+    }
+  factors_to_include = to_include;
+}
+
+//////////////////////////////////////////////////////
+////   Generating the Parallel Coordinates
+//////////////////////////////////////////////////////
+function generateCoords(){
+  document.getElementById('example').innerHTML = "";
+  var green_to_blue = d3.scale.linear()
+    .domain([9, 50])
+    .range(["#7AC143", "#00B0DD"])
+    .interpolate(d3.interpolateLab);
+
+  var color = function(d) { return green_to_blue(d['Mental Activity']); };
+  console.log("color");
+  console.log(color);
+
+
+  var parcoords = d3.parcoords()("#example")
+    .color(color)
+    .alpha(0.4);
+
+  // load csv file and create the chart
+  d3.csv('results.csv', function(data) {
+    parcoords
+      .data(data)
+      .render()
+      .brushMode("1D-axes");  // enable brushing
+
+    // create data table, row hover highlighting
+    var grid = d3.divgrid();
+    d3.select("#grid")
+      .datum(data.slice(0,48))
+      .call(grid)
+      .selectAll(".row")
+      .on({
+        "mouseover": function(d) { parcoords.highlight([d]); updateInfoOnHover(d["Solution"]) },
+        "mouseout": parcoords.unhighlight
+      });
+
+    // update data table on brush event
+    parcoords.on("brush", function(d) {
+      d3.select("#grid")
+        .datum(d.slice(0,48))
+        .call(grid)
+        .selectAll(".row")
+        .on({
+          "mouseover": function(d) { parcoords.highlight([d]);updateInfoOnHover(d["Solution"]) },
+          "mouseout": parcoords.unhighlight
+        });
+    });
+  });
+
+}
+
+
+
+
+var treatment_definitions = {};
+
+function getTreatmentDescriptions()
+{
+  d3.csv("results.csv", function(data) {
+      for (var i = 0; i < data.length; i++) {
+        treatment_definitions[data[i].Solution] = data[i].Description;
+      }
+  });
+}
+
+
+function updateInfoOnHover(treatment_name)
+{  
+  document.getElementById('treatment_desc_div').innerHTML = "<h1>"+treatment_name+"</h1>     " + treatment_definitions[treatment_name];
+}
+
+
+//////////////////////////////////////////////////////
+////   First Run
+//////////////////////////////////////////////////////
+function initialise(){
+    return d3.csv("results.csv", function(data) {  
+        var headerNamesS = d3.keys(data[0]);
+        check_names = headerNamesS;
+        getTreatmentDescriptions();
+        headToDict();
+        generateCheckboxes();
+        generateCoords();
+    });
+}
+
+initialise();
+
+
+</script>
+
+
+
+<div id = "treatment_desc_div">
+
+</div>
+

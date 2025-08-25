@@ -1,0 +1,13 @@
+Table	Location
+BB1ACNRM	http://cs.stir.ac.uk/~sbr/klm/'ee10.prd.opium.klmread.data(BB1ACNRM)'
+BB1CORR	http://cs.stir.ac.uk/~sbr/klm/'ee10.prd.opium.klmread.data(BB1CORR)'
+BB1DENS	http://cs.stir.ac.uk/~sbr/klm/'ee10.prd.opium.klmread.data(BB1DENS)'
+BB1DIST	http://cs.stir.ac.uk/~sbr/klm/'ee10.prd.opium.klmread.data(BB1DIST)'
+BB1ADIST	http://cs.stir.ac.uk/~sbr/klm/'ee10.prd.opium.klmread.data(BB1ADIST)'
+BB1CDIST	http://cs.stir.ac.uk/~sbr/klm/'ee10.prd.opium.klmread.data(BB1CDIST)'
+BB24DIST	http://cs.stir.ac.uk/~sbr/klm/'ee10.prd.opium.klmread.data(BB24DIST)'
+BB3DIST	http://cs.stir.ac.uk/~sbr/klm/'ee10.prd.opium.klmread.data(BB3DIST)'
+TOWDIST	http://cs.stir.ac.uk/~sbr/klm/'ee10.prd.opium.klmread.data(TOWDIST)'
+TRANSITS	http://cs.stir.ac.uk/~sbr/klm/'ee10.prd.opium.klmread.data(TRANSITS)'
+HSFEXC	http://cs.stir.ac.uk/~sbr/klm/'ee10.prd.opium.klmread.data(HSFEXC)'
+HSFGAIN	http://cs.stir.ac.uk/~sbr/klm/'ee10.prd.opium.klmread.data(HSFGAIN)'
