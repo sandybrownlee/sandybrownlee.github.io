@@ -1,0 +1,141 @@
+div#breadcrumb {border-top-color: #66AC3D;}
+
+/* Left navigation */
+ul.subnav{background:#a3d787;}
+ul.subnav li.nav-open a{color:#ffffff;}
+li.nav-open a{background:#5b9936;}
+ul.subnav li a{color:#364c2a;}
+ul.subnav li a:hover,ul.subnav ul.multilevel-linkul-0 li a:hover{background-color:#38691c;color:#ffffff;}
+ul.subnav ul{background:#5b9936;}
+ul.subnav ul li a{color:#ffffff;}
+ul.subnav ul li.nav-open a{background-color:#38691c;}
+ul.subnav ul ul{background:#38691c;}
+ul.subnav ul ul a{color:#ffffff;}
+ul.subnav ul ul li a,span.currentbranch2{background-image:url("/web/20181118133159im_/https://www.stir.ac.uk/media/wwwstiracuk/styleassets/images/nav-arrow-three-dark.png");/**/}
+span.currentbranch0,span.currentbranch1,span.currentbranch2{color:#ffffff;}
+span.currentbranch0{background:#5b9936;}
+span.currentbranch1{background:#38691c;}
+span.currentbranch2{color:#ffffff;}
+ul.subnav span.currentbranch0 a{color:#ffffff;}
+ul.subnav span.currentbranch1 a{color:#ffffff;}
+/**/
+
+#stir-content h1, #stir-content h2, #stir-content h3, #stir-content h4, #stir-content h5, #stir-content h6 { 
+  color:#17260E; /* base + 80% black */
+}
+
+#stir-content a,
+#stir-content a:link,
+#stir-content strong a,
+#stir-content a strong {
+ color:#395F22; /* base + 50% black*/
+ color:#7EB264;
+}
+
+
+
+.ui-tabs-nav li{
+  height:22px;
+}
+.ui-tabs-nav li a, #stir-content .tabs ul.label li {
+    background: #508730;
+    background: -webkit-gradient(linear, left top, left bottom, from(#88BE68), to(#508730));
+    background: -moz-linear-gradient(top, #88BE68, #508730);
+    background: -o-linear-gradient(top, #88BE68, #508730);
+}
+#stir-content .tabs ul.label li a {
+	color: #fff;
+}
+li.ui-tabs-selected a {
+    color: #508730 !important;
+}
+#stir-content .tabs ul.label li.current a{
+	color: #508730;
+}
+li.ui-tabs-selected, .tabs .tab, .tabliner, #stir-content .tabs ul.label li.current {
+    border-color: #508730;
+}
+ul.ui-tabs-nav {background: none; border-bottom:1px solid #508730;}
+.ui-tabs .ui-tabs-panel {
+    border-color: #508730;
+    border-style: none solid solid solid;
+    border-width: medium 1px 1px;
+}
+
+
+table.zebra    {color:#395F22; }
+table.zebra td {border:1px solid #D1E1C7; }
+table.zebra th {border:1px solid #D1E1C7; color:#395F22;}
+
+table.zebra thead tr:nth-child(odd) th,
+.thead-th-odd {
+	background-color:#DFEAD8;
+}
+table.zebra thead tr:nth-child(even) th,
+.thead-th-even {
+	background-color:#DFEAD8;
+}
+table.zebra tbody tr:nth-child(odd) th,
+.tbody-th-odd {
+	background-color:#EEF4EA;
+}
+table.zebra tbody tr:nth-child(even) th,
+.tbody-th-even {
+	background-color:#DFEAD8;
+}
+table.zebra tbody tr:nth-child(even) td,
+.tbody-td-even {
+	background-color:#EEF4EA;
+}
+
+.quotation { color:#395F22; }
+.open {	color:#395F22; }
+.quotation blockquote { border-color:#395F22; }
+
+.sidebar { background:#A9D88D; }
+
+.factbox{
+  background:#A9D88D;
+}
+.factbox-title,.factbox li{
+  border-color:#91CD6D;
+}
+
+.sectiontop{
+//#388C6E  to  #015537
+    background: #015537;
+    background: -webkit-gradient(linear, left top, left bottom, from(#388C6E), to(#015537));
+    background: -moz-linear-gradient(top, #388C6E, #015537);
+    background: -o-linear-gradient(top, #388C6E, #015537);
+}
+div.menublock ul li a:after, div.ticker a:after {content: none;}
+
+#stir-content .promo a{
+  background:#72BF44;
+  color:#333;
+}
+
+.sidebar li {
+    color: #004129;
+}
+/*
+     FILE ARCHIVED ON 13:31:59 Nov 18, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:33:56 Dec 02, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.datanode: 83.684 (4)
+  LoadShardBlock: 108.58 (3)
+  load_resource: 29.301
+  exclusion.robots.policy: 0.188
+  esindex: 0.016
+  RedisCDXSource: 1.913
+  CDXLines.iter: 21.278 (3)
+  exclusion.robots: 0.203
+  captures_list: 135.922
+  PetaboxLoader3.resolve: 47.12 (2)
+*/
