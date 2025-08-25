@@ -1,0 +1,212 @@
+/* Computing Science and Mathematics web pages screen media CSS */
+/* Additional to Uni CSS from ../include/unicss.html, gco 2012-07-06  */
+
+
+body {background-image: url(/img/ns-csam-r.gif);
+      background-repeat: no-repeat;
+      background-position: 10px 70px ;
+      background-attachment: fixed ;
+      }
+
+.off-left { position:absolute;left:-999em;width:990px; margin-bottom: 10px; }
+
+#portal-status{ position: absolute; right:0; top:0; background:#E7E7E7; 
+  font-size:0.75em; line-height:1.5em; }  
+#portal-status a.portal00{ background:transparent url("http://www.stir.ac.uk/media/wwwstiracuk/styleassets/images/portalnotch.png") 100% 50% no-repeat; 
+  color:#FFF; padding:0 14px 0 5px; display:block; 
+  float:left; margin-right:2px; } 
+#portal-status a.portal01{ margin-right:5px; 
+  background: transparent url("http://www.stir.ac.uk/media/wwwstiracuk/styleassets/images/logout.gif") 100% 50% no-repeat; 
+  padding-right:16px; color:#333; }
+
+/* div.leaf form#search{ margin-top:0px; } */
+
+ul.subnav  {font-size: 70%; }
+
+ul.subnav li.nav-header {
+  /* margin-left: 1px; margin-right: 1px; */
+  padding-left:4px;
+  font-weight:bold; 
+  background: #2e2e2e; color: #ffffff;
+  }
+
+/* #stir-content a { text-decoration : none; } */
+/* #stir-content a:hover   { text-decoration : underline; } */
+
+.micronews { margin-left: 20px; }
+.micronews li { border-bottom: 1px black dashed; padding-bottom: 5px; }
+.micronews li.latest { background-color: #DFEAD8; border: 1px #5B9936 solid; 
+		       padding: 5px; }
+
+
+img.ismap { margin-bottom: -0.25em; margin-left: -10px;
+            padding: 0px; border: none; }
+
+.buttonaslink, .deptbutton {color: #68a654; background: inherit; 
+  font-weight: bold; font-size: inherit; padding: 0px; 
+  border: none; text-decoration : none;
+     padding-left: .1em;
+     padding-right: .1em;
+     width: auto;
+     overflow: visible;}
+.buttonaslink:hover, .deptbutton:hover { text-decoration : underline; }
+
+
+#news { /* color: #007000; */
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right: 5px;
+        float: right; width: 220px; }
+
+#news a { /* color: #007000; */ text-decoration: none; }
+
+#news a:hover { color: #ffffff; }
+
+#news .newslinks, .newstext {
+         background-color: #e0ffe0;
+         background-image: url(/img/nav-grad-flip.jpg);
+         background-repeat: repeat-y; background-position: top right;
+         padding: 0px;
+          text-align: left;
+          display: block; font-size: 80%;
+          margin-bottom: 10px;
+          float: right; /* width: 160px; */
+          }
+
+#news .newslinks em, .newstext em {
+         background-color: #68a654; color: #ffffff;
+         font-size: 100%; font-style: normal;
+         font-variant: small-caps; text-align: center ;
+         display: block; text-align: center;
+         padding-bottom: 5px;
+         border-bottom: solid #ffffff 1px;
+         }
+
+#news .newslinks a {
+         display: block;
+         background-image: url(/img/greenrarrow.gif);
+         background-repeat: no-repeat; background-position: 1% 50%;
+         padding-top: 3px; padding-bottom: 4px;
+         padding-left: 10px;
+         border-bottom: solid #ffffff 1px;
+         text-decoration: none;
+         }
+
+#news .newslinks a:hover, .reslinks a:hover {
+          background-image: url(/img/whiterarrow.gif);
+          background-repeat: no-repeat; background-position: 1% 50%;
+          background-color: #7bc67b;
+          }
+
+#news .reslinks {
+          text-align: left;
+          display: block; font-size: 80%;
+          padding: 2px;
+          }
+
+
+#news .reslinks a  {
+         display: block;
+         background-image: url(/img/greenrarrow.gif);
+         background-repeat: no-repeat; background-position: 1% 50%;
+         padding-top: 2px; padding-bottom: 4px;
+         padding-left: 10px;
+         }
+
+#rightpane {
+           float: right; width: 180px;
+           margin-left: 10px; margin-right: 10px; margin-bottom: 10px;
+           text-align: center; background-color: #ffffff;
+           }
+
+.center { text-align: center; }
+
+.greentab {
+             color: #ffffff ;
+             background-color: #68a654 ;
+             display: inline; width: 160px;
+             font-variant: small-caps; text-align: center ;
+             padding-left: 3px; padding-right: 3px;
+             margin-right: 10px;
+             }
+
+.greentabbox {
+             margin-bottom: 10px;
+             border: 1px solid #68a654;
+             padding: 5px;
+             }
+
+.redtab {
+             color: #ffffff ;
+             background-color: #ff0000 ;
+             display: inline; width: 160px;
+             font-variant: small-caps; text-align: center ;
+             padding-left: 3px; padding-right: 3px;
+             margin-right: 10px;
+             }
+
+.redtabbox {
+             margin-bottom: 20px;
+             border: 1px solid #ff0000;
+             padding: 5px;
+             }
+
+.tabbox {
+             margin-bottom: 10px;
+             border: 1px solid #000000;
+             padding: 5px;
+             }
+
+.clear { clear: both; }
+.clearleft { clear: left; }
+.clearright { clear: right; }
+
+.floatright { float: right; text-align: right; margin-left: 10px;  }
+.floatleft { float: left; text-align: left; margin-right: 10px;  }
+
+.boxed { border: solid #68a654 1px; padding: 2px; }
+.buttoned { border: outset gray 2px; padding: 3px; }
+.framed { border: 2px outset #68a654; margin-bottom: -3px; padding: 0px; }
+.rframed { border: 2px outset #68a654; padding: 0px; margin-left: 10px;
+           margin-bottom: -3px; text-align: right; float: right; }
+.lframed { border: 2px outset #68a654; padding: 0px; margin-right: 10px;
+           margin-bottom: -3px; text-align: left; float: left; }
+
+.gallery { display: block; width: 100%; float: right; }
+.gallery img { height: 150px; }
+
+.photo { border: 1px solid #68a654; padding: 0px; text-align: center;
+	 background-color: #ffffff;
+	 float: left; margin-right: 3px; margin-bottom: 20px;
+	 font-size: 80%; }
+.photo img { border: none; margin-bottom: -3px; }
+
+.userlinks { padding-top: 5px; padding-left: 20px; padding-bottom: 5px; }
+
+.redtext { color: #ff0000 ; }
+.bluetext { color: #0000ff ; }
+.greentext { color: #68a654 ; }
+
+#stir-content a:link, #stir-content a:visited, 
+  #stir-content a:active, #stir-content a:hover { color: #68a654; }
+
+.sidebar { margin-top: 20px; background: #DFEAD8; }
+
+li.navactive a { background: #38691c; color: white !important; } 
+ul.multilevel-linkul-1 li.navactive a { text-decoration: underline; } 
+
+.black_overlay{
+  display: none; position: fixed;
+  top: 0%; left: 0%; width: 100%; height: 100%;
+  background-color: black;
+  z-index:1001; -moz-opacity: 0.8; opacity:.80; filter: alpha(opacity=80);
+  }
+
+.white_content {
+  display: none; position: fixed;
+  top: 25%; left: 25%; width: 50%; height: 50%;
+  padding: 16px; border: 5px solid green;
+  background-color: white;
+  z-index:1002; overflow: auto;
+}
+

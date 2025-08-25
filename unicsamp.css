@@ -1,0 +1,93 @@
+/* Computing Science and Mathematics web pages */
+/* CSS for print media, imported from csamp.css, gco 2012-07-10 */
+
+.off-left { position:absolute;left:-999em;width:990px }
+
+/* div.leaf form#search{ margin-top:0px; } */
+
+ul.subnav  {font-size: 70%; }
+
+ul.subnav li.nav-header {
+  padding-left:4px;
+  font-weight:bold; 
+  background: #2e2e2e; color: #ffffff;
+  }
+
+/* #stir-content a { text-decoration : none; } */
+
+.micronews { margin-left: 20px; }
+.micronews li { border-bottom: 1px black dashed; padding-bottom: 5px; }
+.micronews li.latest { background-color: #DFEAD8; border: 1px #5B9936 solid; 
+		       padding: 5px; }
+
+img.ismap { margin-bottom: -0.25em; margin-left: -10px;
+	    padding: 0px; border: none; }
+
+.buttonaslink, .deptbutton {color: #68a654; background: inherit;
+  font-weight: bold; font-size: inherit; padding: 0px; 
+  border: none; text-decoration : none; }
+
+.greentab {
+             color: #ffffff ;
+             background-color: #68a654 ;
+             display: inline; width: 160px;
+             font-variant: small-caps; text-align: center ;
+             padding-left: 3px; padding-right: 3px;
+             margin-right: 10px;
+             }
+
+.greentabbox {
+             margin-bottom: 10px;
+             border: 1px solid #68a654;
+             padding: 5px;
+             }
+
+.redtab {
+             color: #ffffff ;
+             background-color: #ff0000 ;
+             display: inline; width: 160px;
+             font-variant: small-caps; text-align: center ;
+             padding-left: 3px; padding-right: 3px;
+             margin-right: 10px;
+             }
+
+.redtabbox {
+             margin-bottom: 20px;
+             border: 1px solid #ff0000;
+             padding: 5px;
+             }
+.clear { clear: both; }
+.clearleft { clear: left; }
+.clearright { clear: right; }
+
+.floatright { float: right; text-align: right; margin-left: 10px;  }
+.floatleft { float: left; text-align: left; margin-right: 10px;  }
+
+.boxed { border: solid #68a654 1px; padding: 2px; }
+.buttoned { border: outset gray 2px; padding: 3px; }
+.framed { border: 2px outset #68a654; margin-bottom: -3px; padding: 0px; }
+.rframed { border: 2px outset #68a654; padding: 0px; margin-left: 10px;
+           margin-bottom: -3px; text-align: right; float: right; }
+.lframed { border: 2px outset #68a654; padding: 0px; margin-right: 10px;
+           margin-bottom: -3px; text-align: left; float: left; }
+
+.gallery { display: block; width: 100%; float: right; }
+.gallery img { height: 150px; }
+
+.photo { border: 1px solid #68a654; padding: 0px; text-align: center;
+         background-color: #ffffff;
+         float: left; margin-right: 3px; margin-bottom: 20px;
+         font-size: 80%; }
+.photo img { border: none; margin-bottom: -3px; }
+
+.redtext { color: #ff0000 ; }
+.bluetext { color: #0000ff ; }
+.greentext { color: #68a654 ; }
+
+#stir-content a:link, #stir-content a:visited,
+  #stir-content a:active { color: #68a654; }
+
+.sidebar { margin-top: 20px; background:#A9D88D; }
+
+li.navactive a { background: #38691c; color: white !important; }
+ul.multilevel-linkul-1 li.navactive a { text-decoration: underline; }
