@@ -9,6 +9,7 @@
 <meta name="description" content="" />
 <meta name="author" content="Sandy Brownlee" />
   <!--#include virtual="/~sbr/stiracuk/unicss.html" -->
+  {% include stiracuk/unicss.html %}
   <!--was an include of virtual="/include/unicss.html" -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" type="text/css" href="sbstyles.css" />
@@ -20,6 +21,7 @@
 
   <!-- "#include" the standard dept banner and nav bar -->
   <!--#include virtual="/~sbr/stiracuk/uniheader.html" -->
+  {% include stiracuk/uniheader.html %}
   <!-- was an include of virtual="/include/uniheader.html" -->
   <!-- end of included banner and nav bar -->
 
@@ -27,6 +29,7 @@
   <a name="maincontent"></a>
   <!-- main content goes below here -->
 	<!--#include virtual="includes/sbheader.html" -->
+	{% include sbheader.html %}
 
 	<h3>Teaching</h3>
 	<p>I currently coordinate CSCU9A5 - <i>Code Analysis and Performance</i> during the Autumn/Winter semester, and ITNPBD6 - <i>Machine Learning and Data Analytics</i> during the Spring and Summer semesters. I also teach on CSCU9A3 - <i>Data Structures, Objects and Algorithms</i> in the Autumn.
@@ -52,4 +55,5 @@
 <!--#set var="myext" value="7454" -->
 
 <!--#include virtual="/~sbr/stiracuk/unifooter.html" -->
+{% include stiracuk/unifooter.html %}
 <!-- was in include of /include/unifooter.html -->
