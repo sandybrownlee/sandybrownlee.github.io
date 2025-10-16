@@ -6,6 +6,7 @@
 <meta name="description" content="" />
 <meta name="author" content="Sandy Brownlee" />
   <!--#include virtual="/~sbr/stiracuk/unicss.html" -->
+{% include stiracuk/unicss.html %}
   <!--was an include of virtual="/include/unicss.html" -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" type="text/css" href="sbstyles.css" />
@@ -17,6 +18,7 @@
 
   <!-- "#include" the standard dept banner and nav bar -->
   <!--#include virtual="/~sbr/stiracuk/uniheader.html" -->
+  {% include stiracuk/uniheader.html %}
   <!-- was an include of virtual="/include/uniheader.html" -->
   <!-- end of included banner and nav bar -->
 
@@ -31,6 +33,8 @@
   <a name="maincontent"></a>
   <!-- main content goes below here -->
 	<!--#include virtual="includes/sbheader.html" -->
+	{% include sbheader.html %}
+
 
 	<h3>Research student supervision</h3>
 	<p>I have been privileged to work with a number of talented individuals working their way to a research degree (MPhil, PhD, or Profdoc). They are listed below, with a brief note about where they are now (if I have that information!)</p>
@@ -60,4 +64,5 @@
 <!--#set var="myext" value="7454" -->
 
 <!--#include virtual="/~sbr/stiracuk/unifooter.html" -->
+{% include stiracuk/unifooter.html %}
 <!-- was in include of /include/unifooter.html -->
