@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +5,7 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta name="author" content="Sandy Brownlee" />
-  {% include stiracuk/unicss.html %}
+  <!--#include virtual="/~sbr/stiracuk/unicss.html" -->
   <!--was an include of virtual="/include/unicss.html" -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" type="text/css" href="sbstyles.css" />
@@ -18,24 +16,32 @@
 <body class="Study with Stirling">
 
   <!-- "#include" the standard dept banner and nav bar -->
-  {% include stiracuk/uniheader.html %}
+  <!--#include virtual="/~sbr/stiracuk/uniheader.html" -->
   <!-- was an include of virtual="/include/uniheader.html" -->
   <!-- end of included banner and nav bar -->
+
+  <div id="breadcrumb">
+    You are here:
+    <a title ="Computing Science and Mathematics Home" href="/">CS&amp;M</a>
+    &raquo; <a title ="Staff List" href="/intro/whoiswho.html">Staff</a>
+    &raquo; Dr Sandy Brownlee
+  </div>
 
   <div id="stir-content" class="seven-ten">
   <a name="maincontent"></a>
   <!-- main content goes below here -->
-	{% include sbheader.html %}
+	<!--#include virtual="includes/sbheader.html" -->
 
 	<h3>Research student supervision</h3>
 	<p>I have been privileged to work with a number of talented individuals working their way to a research degree (MPhil, PhD, or Profdoc). They are listed below, with a brief note about where they are now (if I have that information!)</p>
 
 
 	<h3>Current Students</h3>
-	<p>Principal supervisor for GianCarlo Catalano (MPhil) - explaining non-deterministic solvers</p>
+	<p>Principal supervisor for GianCarlo Catalano (PhD) - explaining non-deterministic solvers</p>
 	<p>Principal supervisor for Hiba Ahmed (Prof Doc) - machine learning and optimisation for renewable energy in the home</p>
     <p>Co-supervisor for Danishta Kaul (PhD) (principal supervisor Gemma Learmonth) - Improving Walking Patterns and Obstacle Negotiation in Older People Using Noisy Galvanic Vestibular Stimulation (nGVS</p>
     <p>Co-supervisor for Mahbub Kabir (PhD) (principal supervisor Anna Wilson) - Enhancing Numeracy Skills with Personalized Learning App: An Inquiry into Teachers' use of Sumdog from a New Materialist Perspective</p>
+    <p>Co-supervisor for Jakub Konopka (PhD) (principal supervisor Jason Adair) - Modelling and optimisation of vertical farms</p>
 
 	<p><b>Former students</b>
 <p>Principal supervisor for <a href="http://www.cs.stir.ac.uk/~kgr/">Kevin Graham</a> (PhD) - viva date 7/1/2019, "An Investigation Of Factors Influencing Algorithm Selection For High Dimensional Continuous Optimisation Problems" - currently working with me on a few industrial projects</p>
@@ -53,5 +59,5 @@
 <!--#set var="myroom" value="4B125" -->
 <!--#set var="myext" value="7454" -->
 
-{% include stiracuk/unifooter.html %}
+<!--#include virtual="/~sbr/stiracuk/unifooter.html" -->
 <!-- was in include of /include/unifooter.html -->
